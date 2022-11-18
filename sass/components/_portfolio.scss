@@ -1,0 +1,17 @@
+.header-underline {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.portfolio {
+  padding-top: 94px;
+  margin-bottom: 94px;
+}
