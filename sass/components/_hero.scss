@@ -21,6 +21,16 @@
     line-height: 1.9;
     background-color: var(--accent-color);
     color: var(--white-color);
+
+    @media screen and (min-width:320px) and (max-width:1200px) {
+      padding: 10px 24px;
+    }
+  }
+
+  @media screen and (min-width:320px) and (max-width:1200px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    font-size: 26px;
   }
 }
 
@@ -32,4 +42,9 @@
   letter-spacing: 0.06em;
   color: var(--white-color);
   text-transform: uppercase;
+
+  @media screen and (min-width:320px) and (max-width:1200px) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
 }
