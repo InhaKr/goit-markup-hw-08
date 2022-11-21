@@ -1093,6 +1093,7 @@ img {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
+
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   .modal {
     width: 450px;
@@ -1105,7 +1106,6 @@ img {
     transform: translate(-50%, -50%);
   }
 }
-
 .modal-X {
   display: flex;
   justify-content: center;

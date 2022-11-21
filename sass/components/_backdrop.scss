@@ -81,17 +81,20 @@
     letter-spacing: 0.01em;
     margin-bottom: 4px;
   }
+}
 
-  @media screen and (min-width: 480px) and (max-width:1200px) {
+@media screen and (min-width: 480px) and (max-width:1200px) {
+  .modal {
     width: 450px;
     height: 609px;
     transform: translate(-50%, -61%);
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .modal {
     transform: translate(-50%, -50%);
   }
-
 }
 
 .modal-X {
