@@ -39,27 +39,45 @@
                 </li>
               </ul>
             </nav>
+            <div class="s">
+              <ul class="nav-list">
+                <li class="nav-contact">
+                  <a class="nav-email" href="mailto:info@devstudio.com">
+                    <svg class="nav-icon" width="16" height="12">
+                      <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
 
-            <ul class="nav-list">
-              <li class="nav-contact">
-                <a class="nav-email" href="mailto:info@devstudio.com">
-                  <svg class="nav-icon" width="16" height="12">
-                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="nav-contact">
-                <a class="nav-tel" href="tel:+380961111111">
-                  <svg class="nav-icon" width="10" height="16">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="nav-contact">
+                  <a class="nav-tel" href="tel:+380961111111">
+                    <svg class="nav-icon" width="10" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-smartphone"
+                      ></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-social">
+                <a class="" href="">
+                  <span class="q">Instagram</span>
+                </a>
+                <a class="" href="">
+                  <span class="q">Twitter</span>
+                </a>
+                <a class="" href="">
+                  <span class="q">Facebook</span>
+                </a>
+                <a class="" href="">
+                  <span class="q">LinkedIn</span>
+                </a>
+              </div>
+            </div>
           </div>
+
           <button
             class="button-menu is-open"
             type="button"
@@ -98,7 +116,6 @@
       </section>
 
       <section class="characteristic">
-        <!--скрытый заголовок-->
         <div class="container">
           <h2 class="section-title sr-only">Як ми працюємо</h2>
           <ul class="characteristic-list">
@@ -180,14 +197,75 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
+            <!--<li class="team-item">
+              <img
+                class="team-img"
+                srcset="
+                  ./images/retina-img/img_pd-1x-270.jpg 1x,
+                  ./images/retina-img/img_pd-2x-min.jpg 2x
+                "
+                src="./images/retina-img/img_pd-1x-270.jpg"
+                alt="Фотографія продуктового дизайнера"
+                width="270"
+              />
+
+              <div class="team-info">
+                <h3 class="team-subtitle">Ігор Дем'яненко</h3>
+                <p class="team-text">Product Designer</p>
+                <ul class="team-actions">
+                  <li class="team-li">
+                    <a class="team-link" href="">
+                      <svg class="team-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-li">
+                    <a class="team-link" href="">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-li">
+                    <a class="team-link" href="">
+                      <svg class="team-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-li">
+                    <a class="team-link" href="">
+                      <svg class="team-icon" width="20" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>-->
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/img_pd.jpg"
+                srcset="
+                  ./images/retina-img/img_pd-1x-270.jpg        270w,
+                  ./images/retina-img/img_pd-2x-min.jpg        540w,
+                  ./images/retina-img/img_pd-mobile-450.jpg    450w,
+                  ./images/retina-img/img_pd-mobile-2x-900.jpg 900w,
+                  ./images/retina-img/img_pd-tablet-354.jpg    354w,
+                  ./images/retina-img/img_pd-tablet-2x-708.jpg 708w
+                "
+                src="./images/retina-img/img_pd-1x-270.jpg"
                 alt="Фотографія продуктового дизайнера"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 20vw, (min-width: 768px) 45vw, (min-width: 320px) 100vw"
               />
+
               <div class="team-info">
                 <h3 class="team-subtitle">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -233,10 +311,17 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/retina-img/img_fd-desc-1x-270.jpg   270w,
+                  ./images/retina-img/img_fd-desc-2x-540.jpg   540w,
+                  ./images/retina-img/img_fd-mobile-1x-450.jpg 450w,
+                  ./images/retina-img/img_fd-mobile-2x-900.jpg 900w,
+                  ./images/retina-img/img_fd-tablet-1x-354.jpg 354w,
+                  ./images/retina-img/img_fd-tablet-2x-708.jpg 708w
+                "
                 src="./images/img_fd.jpg"
                 alt="Фотографія фронтенд разробника"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 20vw, (min-width: 768px) 45vw, (min-width: 320px) 100vw"
               />
               <div class="team-info">
                 <h3 class="team-subtitle">Ольга Рєпіна</h3>
@@ -282,10 +367,17 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/retina-img/img_m-desc-1x-270.jpg   270w,
+                  ./images/retina-img/img_m-desc-2x-540.jpg   540w,
+                  ./images/retina-img/img_m-mobile-1x-450.jpg 450w,
+                  ./images/retina-img/img_m-mobile-2x-900.jpg 900w,
+                  ./images/retina-img/img_m-tablet-1x-354.jpg 354w,
+                  ./images/retina-img/img_m-tablet-2x-708.jpg 708w
+                "
                 src="./images/img_m.jpg"
                 alt="Фотографія маркетолога"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 20vw, (min-width: 768px) 45vw, (min-width: 320px) 100vw"
               />
               <div class="team-info">
                 <h3 class="team-subtitle">Микола Тарасов</h3>
@@ -331,10 +423,17 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/retina-img/img_ui-desc-1x-270.jpg   270w,
+                  ./images/retina-img/img_ui-desc-2x-540.jpg   540w,
+                  ./images/retina-img/img_ui-mobile-1x-450.jpg 450w,
+                  ./images/retina-img/img_ui-mobile-2x-900.jpg 900w,
+                  ./images/retina-img/img_ui-tablet-1x-354.jpg 354w,
+                  ./images/retina-img/img_ui-tablet-2x-708.jpg 708w
+                "
                 src="./images/img_ui.jpg"
                 alt="Фотографія дизайнера"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 20vw, (min-width: 768px) 45vw, (min-width: 320px) 100vw"
               />
               <div class="team-info">
                 <h3 class="team-subtitle">Михайло Єрмаков</h3>

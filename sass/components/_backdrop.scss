@@ -83,11 +83,19 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 310px;
+    height: 625px;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width:1200px) {
   .modal {
     width: 450px;
     height: 609px;
-    transform: translate(-50%, -61%);
+    transform: translate(-50%, -45%);
   }
 }
 

@@ -52,9 +52,11 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) and (max-width:1199px) {
+  @media screen and (min-width: 480px) and (max-width:1199px) {
     display: block;
     width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     margin-bottom: 20px;
   }
 }

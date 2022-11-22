@@ -57,6 +57,12 @@ a:focus {
   background-color: var(--accent-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -121,6 +127,15 @@ a:focus {
   }
   .button-menu .button-cross {
     display: none;
+  }
+  .nav-social {
+    display: flex;
+  }
+  .q {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-right: 20px;
+    color: var(--accent-color);
   }
   .button-menu.is-open .button-cross {
     display: block;
@@ -198,6 +213,9 @@ a:focus {
   .nav-menu {
     display: flex;
   }
+  .nav-social {
+    display: none;
+  }
 }
 .nav-contact:not(:last-child) {
   margin-right: 30px;
@@ -243,7 +261,7 @@ a:focus {
   border-radius: 2px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-link::after {
     display: none;
   }
@@ -278,13 +296,21 @@ a:focus {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .nav-tel {
+    font-size: 25px;
+  }
+  .q {
+    font-size: 10px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-link {
     font-size: 40px;
     line-height: 1.2;
   }
   .nav-menu {
-    padding: 48px 40px 134px 40px;
+    padding: 48px 40px;
     text-align: start;
     padding-left: 40px;
     transform: translateY(-9%);
@@ -294,13 +320,13 @@ a:focus {
     flex-direction: column;
     justify-content: space-between;
   }
-  .nav-menu.is-open.button-menu {
-    margin-bottom: 25px;
-  }
   .nav-list {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: -35px;
+    margin-bottom: 25px;
+  }
+  .nav-tel {
+    color: var(--accent-color);
   }
   .nav-email {
     font-size: 24px;
@@ -318,9 +344,6 @@ a:focus {
   .nav-contact {
     margin-right: 0;
     font-size: 34px;
-    margin-bottom: 32px;
-  }
-  .nav-contact:not(:last-child) {
     margin-bottom: 32px;
   }
   .nav-icon {
@@ -426,6 +449,7 @@ a:focus {
   .characteristic-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -488,6 +512,11 @@ a:focus {
 .characteristic-item--astronaut::before {
   background-image: url(../images/astronaut.png);
 }
+@media screen and (min-width: 320px) {
+  .characteristic-item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .characteristic-item {
     max-width: 100%;
@@ -541,12 +570,6 @@ a:focus {
     display: none;
   }
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .work {
   padding-bottom: 94px;
 }
@@ -593,7 +616,7 @@ img {
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .team-item {
     margin-bottom: 30px;
   }
@@ -663,25 +686,28 @@ img {
   fill: currentColor;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   .team-img {
     width: 100%;
   }
 }
+@media (min-width: 320px) and (max-width: 1200px) {
+  .team-info {
+    min-width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
-  .team-img {
+  .team-info {
     width: 450px;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
-  .team-img {
+  .team-info {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-img {
+  .team-info {
     width: 270px;
   }
 }
@@ -703,14 +729,27 @@ img {
   padding: 0;
   list-style: none;
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients-actions {
     justify-content: center;
   }
 }
 @media screen and (min-width: 480px) {
   .clients-actions {
-    justify-content: space-between;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-actions {
+    max-width: 738px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-actions {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 .clients-icon {
@@ -744,23 +783,52 @@ img {
 .clients-li:last-child {
   margin-right: 0;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .clients-li {
-    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 210px;
+    margin-right: 5px;
     margin-bottom: 30px;
+  }
+  .clients-li:last-child {
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients-li {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+  .clients-li:nth-child(2n) {
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .clients-li {
+    width: 226px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
   .clients-li:nth-child(3n) {
     margin-right: 0;
   }
+  .clients-li:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .clients-li:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
+  .clients-li {
+    width: 170px;
+  }
   .clients-li:nth-child(3n) {
+    margin-right: 30px;
+  }
+  .clients-li:nth-child(4n) {
     margin-right: 30px;
   }
   .clients-li:last-child {
@@ -980,10 +1048,12 @@ img {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .mod-input {
     display: block;
     width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     margin-bottom: 20px;
   }
 }
@@ -1094,11 +1164,18 @@ img {
   margin-bottom: 4px;
 }
 
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 310px;
+    height: 625px;
+    transform: translate(-50%, -50%);
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   .modal {
     width: 450px;
     height: 609px;
-    transform: translate(-50%, -61%);
+    transform: translate(-50%, -45%);
   }
 }
 @media screen and (min-width: 768px) {

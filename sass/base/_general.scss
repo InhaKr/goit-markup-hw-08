@@ -59,3 +59,9 @@ a:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

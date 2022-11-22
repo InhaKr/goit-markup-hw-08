@@ -57,6 +57,12 @@ a:focus {
   background-color: var(--accent-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -121,6 +127,15 @@ a:focus {
   }
   .button-menu .button-cross {
     display: none;
+  }
+  .nav-social {
+    display: flex;
+  }
+  .q {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-right: 20px;
+    color: var(--accent-color);
   }
   .button-menu.is-open .button-cross {
     display: block;
@@ -198,6 +213,9 @@ a:focus {
   .nav-menu {
     display: flex;
   }
+  .nav-social {
+    display: none;
+  }
 }
 .nav-contact:not(:last-child) {
   margin-right: 30px;
@@ -243,7 +261,7 @@ a:focus {
   border-radius: 2px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-link::after {
     display: none;
   }
@@ -278,13 +296,21 @@ a:focus {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .nav-tel {
+    font-size: 25px;
+  }
+  .q {
+    font-size: 10px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-link {
     font-size: 40px;
     line-height: 1.2;
   }
   .nav-menu {
-    padding: 48px 40px 134px 40px;
+    padding: 48px 40px;
     text-align: start;
     padding-left: 40px;
     transform: translateY(-9%);
@@ -294,13 +320,13 @@ a:focus {
     flex-direction: column;
     justify-content: space-between;
   }
-  .nav-menu.is-open.button-menu {
-    margin-bottom: 25px;
-  }
   .nav-list {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: -35px;
+    margin-bottom: 25px;
+  }
+  .nav-tel {
+    color: var(--accent-color);
   }
   .nav-email {
     font-size: 24px;
@@ -318,9 +344,6 @@ a:focus {
   .nav-contact {
     margin-right: 0;
     font-size: 34px;
-    margin-bottom: 32px;
-  }
-  .nav-contact:not(:last-child) {
     margin-bottom: 32px;
   }
   .nav-icon {
@@ -663,10 +686,12 @@ a:focus {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .mod-input {
     display: block;
     width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     margin-bottom: 20px;
   }
 }
