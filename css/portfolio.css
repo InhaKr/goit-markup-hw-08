@@ -17,6 +17,10 @@ body {
   background-color: var(--white-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -69,6 +73,11 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     min-width: 480px;
@@ -106,9 +115,9 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-block {
-    justify-content: start;
+    justify-content: center;
   }
 }
 
@@ -205,7 +214,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
-    margin-right: 92px;
+    margin-right: 96px;
   }
 }
 
@@ -232,6 +241,7 @@ img {
   }
   .nav-contact:not(:last-child) {
     margin-right: 0;
+    padding-top: 10px;
   }
 }
 .nav-items .current {
@@ -286,13 +296,20 @@ img {
 
 .nav-icon {
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 8px;
   fill: currentColor;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav-icon {
     width: 14px;
     height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-icon--tel {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -320,32 +337,51 @@ img {
     flex-direction: column;
     justify-content: space-between;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 479px) {
+  .nav-menu.is-open {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-list {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 25px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-tel {
     color: var(--accent-color);
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-email {
     font-size: 24px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .button-menu {
     z-index: 1;
   }
   .button-menu:hover, .button-menu:focus {
     fill: var(--accent-color);
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-items {
     margin-right: 0;
     margin-bottom: 32px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-contact {
     margin-right: 0;
     font-size: 34px;
     margin-bottom: 32px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-icon {
     display: none;
   }
@@ -372,7 +408,8 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
-    margin-right: 87px;
+    margin-right: 88px;
+    font-size: 24px;
   }
 }
 
@@ -499,17 +536,19 @@ img {
   display: flex;
   align-items: baseline;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-info {
     display: block;
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -528,15 +567,16 @@ img {
 .footer-data {
   margin-right: 70px;
 }
-@media screen and (min-width: 320px) and (max-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-data {
     margin-right: 0;
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-data {
-    margin-right: 35px;
+    margin-right: 175px;
+    margin-left: 75px;
   }
 }
 .footer-social {
@@ -544,7 +584,7 @@ img {
   margin-left: 0;
   margin-right: 93px;
 }
-@media screen and (min-width: 320px) and (max-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-social {
     margin-right: 0;
     padding-left: 0;
@@ -558,7 +598,7 @@ img {
   list-style: none;
   margin: 0;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-actions {
     display: flex;
     justify-content: center;
@@ -624,6 +664,11 @@ img {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-form {
+    margin: 0 auto;
+  }
+}
 .footer-form__text {
   display: block;
   font-weight: 700;
