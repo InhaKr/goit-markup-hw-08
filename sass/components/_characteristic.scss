@@ -98,11 +98,6 @@
     background-image: url(../images/antenna.png);
     background-position: center;
     margin-bottom: 30px;
-
-    @media (min-width: 320px) and (max-width: 767px) {
-      margin-bottom: 0;
-
-    }
   }
 
   &--clock::before {
